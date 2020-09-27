@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+{% block content%}
+
+<div class="container">
+    <a href = "{{url_for ('main.new_pitch', id = category.id)}}" class = "btn btn-primary text-center text-secondary" style="float: right;"> Update Your Pitch</a>
+</div>
+
+<br>
+<br>
+
+<div class="col-md-10 col-md-offset-1 col-sm-12">
+    <h2 class="text-center">{{category.name | upper}}</h2>
+    <hr>
+</div>
+{% if pitches %}
+<div class = "col-sm-12 col-md-8">
+    {{macro.displayPitches(pitches)}}
+</div>
+{% else %}
+<div class="well">
+    <h3 style="text-align: center;font-size: 50px;padding: 10%;"> No Pitches Availed ! </h3>
+</div>
+{% endif %}
+
+{% endblock %}

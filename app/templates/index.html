@@ -1,0 +1,36 @@
+{% extends 'base.html%}
+{% import 'macros.html' as macro %}
+
+{% block content %}
+<div class = "container">
+    <h1 class ="tect-center"> Welcome to Perfect Pitch</h1>
+    <div class ="container-fluid" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    <div class = "row">
+
+    <div class = "container" id ="block-text">
+        <br>
+        <div class = "col-md-6">
+            <img src="/static/photos/pitch.jpeg" style = "margin-left: 100%; padding-left: 100%;height: 300px;">
+
+        </div>
+        <br>
+        <div class ="col-md-6">
+            <p style = "font-size: 20px; float: right;"><em> In life, you only have 60 seconds to impress someone. 1 minute can make or break you. How do we make sure that you use your 1 minute to actually say something meaningful ? Perfect-Pitch Amigos</em></p>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class = "container">
+        <br>
+        <h2><strong> CHOOSE YOUR CATEGORY</strong>
+            <em style ="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 30px;">{{macro.displayCategoryList}}</em>
+            <br>
+            <br>
+            <p style = "font-style: oblique;"><strong> Do you wish to append a Category ?</strong></p>
+            <br>
+
+        <h3 class= "add-category"><a href ="/add/category" class ="btn btn-secondary" style="background-color: darkorange;">ADD PITCH CATEGORY</a></h3>
+
+    </div>
+    {% endblock %}
