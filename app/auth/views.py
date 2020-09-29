@@ -10,7 +10,7 @@ from ..email import mail_message
 @auth.route('/register', methods=["GET", "POST"])
 def register():
     form = RegistrationForm()
-    if fform.validate_on_submit():
+    if form.validate_on_submit():
         user = User(email=form.email.data,
                     username=form.username.data, password=form.password.data)
 
