@@ -5,13 +5,9 @@
 Perfect-Pitch is an application that allows you to Upload your pitch, comment on users pitches, and post reviews on their pitches
 
 
-#### By **Faith Kazungu**
+#### By **Alvin Wainaina**
 
 ## Link to live site
-
-
-
-
 
 ## Setup/Installation Requirements
 
